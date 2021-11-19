@@ -5,11 +5,17 @@ footer {
 
 .back-to-top {
     background-color: #37475A;
-    width: 100vw;
+    width: inherit;
     color: #fff;
     text-decoration: none;
     padding: 15px;
     font-size: 13px;
+    display: block;
+    box-sizing: border-box;
+}
+
+.back-to-top:hover {
+    background-color: #485769;
 }
 
 .footer-logo-container {
