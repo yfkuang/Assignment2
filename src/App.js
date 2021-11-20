@@ -2,7 +2,8 @@ import './App.css';
 import {
   BrowserRouter as Router,
   Routes,
-  Route
+  Route,
+  useParams
 } from "react-router-dom"
 import { Header } from './components/header'
 import { Footer } from './components/footer'
@@ -12,6 +13,8 @@ import { Product } from './components/pages/product'
 import { Products } from './products.js'
 
 function App() {
+  let { id } = useParams();
+
   return (
     <div className="App">
       
