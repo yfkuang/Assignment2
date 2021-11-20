@@ -7,7 +7,7 @@ export const Footer = () => {
         <footer>
             <Link className="back-to-top" to={{hash: "#top"}}>Back to top</Link>
             <div className="footer-logo-container">
-                <img src={logo} alt="Logo" />
+                <Link to={{pathname: '/'}}><img src={logo} alt="Logo" /></Link>
             </div>
             <div className="footer-bottom">
                 <p>&copy; 2008-2021, Amazon.com, Inc. or its affiliates</p>
