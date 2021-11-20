@@ -1,0 +1,14 @@
+.product-row {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.product-row h2 {
+    display: block;
+    text-align: left;
+    text-transform: capitalize;
+    margin: 0;
+    font-size: 21px;
+    color: #0F1111;
+}

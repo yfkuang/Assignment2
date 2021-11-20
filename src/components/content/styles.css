@@ -1,4 +1,5 @@
 .content {
     padding: 20px;
     background-color: #EAEDED;
+    min-height: calc(100vh - 222px - 110px)
 }

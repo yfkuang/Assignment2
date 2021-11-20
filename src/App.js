@@ -9,6 +9,7 @@ import { Footer } from './components/footer'
 import { Content } from './components/content';
 import { Index } from './components/pages/landing'
 import { Product } from './components/pages/product'
+import { Products } from './products.js'
 
 function App() {
   return (
@@ -19,9 +20,9 @@ function App() {
         <Content>
           <Routes>
             {/* Index */}
-            <Route exact path="/" element={<Index/>} />
+            <Route exact path="/" element={<Index products={ Products }/>} />
             {/* Product */}
-            <Route path="/product/:id" element={<Product/>} />
+            <Route path="/product/:id" element={<Product products={ Products }/>} />
           </Routes>
         </Content>
         <Footer />
