@@ -5,30 +5,25 @@ import {
   Route,
   useParams
 } from "react-router-dom"
+import firebase from "firebase";
 import { Header } from './components/header'
-import { Footer } from './components/footer'
-import { Content } from './components/content';
 import { Index } from './components/pages/landing'
-import { Product } from './components/pages/product'
-import { Products } from './products.js'
 
 function App() {
-  let { id } = useParams();
+
+  const db = firebase.firestore();
 
   return (
     <div className="App">
       
       <Router>
         <Header />
-        <Content>
           <Routes>
             {/* Index */}
-            <Route exact path="/" element={<Index products={ Products }/>} />
+            <Route exact path="/" element={<Index/>} />
             {/* Product */}
-            <Route path="/product/:id" element={<Product products={ Products }/>} />
+            <Route path="/fighter/:id" element={<Fighter/>} />
           </Routes>
-        </Content>
-        <Footer />
       </Router>
       
     </div>
